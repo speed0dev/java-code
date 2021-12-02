@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<hearder>
+		<count><![CDATA[10]]></count>
+		<error></error>
+		<msg>success</msg>
+	</hearder>
+	
+	<result>
+		<items>
+			<itemNum><![CDATA[1]]></itemNum>
+			<itemData><![CDATA[100]]></itemData>
+			<itemUser><![CDATA[AAA User 김대감.]]></itemUser>
+			<itemList>
+				<item>
+					<Mode><![CDATA[  11 asjdla1  ]]></Mode>
+					<Price><![CDATA[11 1000]]></Price>
+					<nameValue>name 1_7777</nameValue>
+					<checkName>checkName1</checkName>
+				</item>
+				<item>
+					<Mode>22 asjdla2</Mode>
+					<Price>22 1000</Price>
+					<nameValue>name 2_7777</nameValue>
+					<checkName>checkName2</checkName>
+				</item>
+				<item>
+					<Mode>33 asjdla</Mode>
+					<Price>33 1000</Price>
+					<nameValue>name 7777</nameValue>
+					<checkName>checkName1</checkName>
+				</item>
+			</itemList>
+			<dataList>
+				<data>
+					<DName>DATA1</DName>
+					<DValue>Var100</DValue>
+				</data>
+				<data>
+					<DName>DATA2</DName>
+					<DValue>Var200</DValue>
+				</data>
+			</dataList>
+			<rowList>
+				<row>
+					<check>1100</check>
+				</row>
+				<row>
+					<check>1200</check>
+				</row>
+				<row>
+					<check>1300</check>
+				</row>
+			</rowList>
+		</items>
+		
+		<items>
+			<itemNum>1</itemNum>
+			<itemData>100</itemData>
+			<itemUser>Kim 삿갓</itemUser>
+			<itemList>
+				<item>
+					<Mode>44 asjdla1</Mode>
+					<Price>44 1000</Price>
+					<nameValue>name 1_7777</nameValue>
+					<checkName>checkName1</checkName>
+				</item>
+				<item>
+					<Mode>55 asjdla2</Mode>
+					<Price>55 1000</Price>
+					<nameValue>name 2_7777</nameValue>
+					<checkName>checkName2</checkName>
+				</item>
+				<item>
+					<Mode>66 asjdla</Mode>
+					<Price>66 1000</Price>
+					<nameValue>name 7777</nameValue>
+					<checkName>checkName1</checkName>
+				</item>
+			</itemList>
+			<dataList>
+			</dataList>
+			<rowList>
+				<row>
+					<check>2100</check>
+				</row>
+				<row>
+					<check>2200</check>
+				</row>
+			</rowList>
+		</items>
+	</result>
+
+</DATA>
+
