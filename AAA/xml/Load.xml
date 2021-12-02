@@ -13,14 +13,14 @@
 			<itemUser><![CDATA[AAA User 김대감.]]></itemUser>
 			<itemList>
 				<item>
-					<Mode><![CDATA[  11 asjdla1  ]]></Mode>
-					<Price><![CDATA[11 1000]]></Price>
+					<mode><![CDATA[  11 asjdla1  ]]></mode>
+					<price><![CDATA[11 1000]]></price>
 					<nameValue>name 1_7777</nameValue>
 					<checkName>checkName1</checkName>
 				</item>
 				<item>
-					<Mode>22 asjdla2</Mode>
-					<Price>22 1000</Price>
+					<mode>22 asjdla2</mode>
+					<price>22 1000</price>
 					<nameValue>name 2_7777</nameValue>
 					<checkName>checkName2</checkName>
 				</item>
@@ -39,6 +39,7 @@
 				<data>
 					<DName>DATA2</DName>
 					<DValue>Var200</DValue>
+					<SampleValue>sampleAAA</SampleValue>
 				</data>
 			</dataList>
 			<rowList>
@@ -89,6 +90,20 @@
 				</row>
 			</rowList>
 		</items>
+		
+		<items>
+			<itemNum>1</itemNum>
+			<itemData>100</itemData>
+			<itemUser>Kim 삿갓</itemUser>
+			<rowList>
+				<row>
+					<check>4400</check>
+				</row>
+			</rowList>
+		</items>
+		
+	
+		
 	</result>
 
 </DATA>

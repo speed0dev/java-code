@@ -1,6 +1,7 @@
 package com.jk.data.control;
 
 import java.io.File;
+import java.util.List;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
@@ -10,19 +11,62 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 
-import org.w3c.dom.CharacterData;
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
 
 import com.jk.data.util.XmlNodeUtil;
+import com.jk.data.vo.ItemVO;
+import com.jk.data.vo.meta.OrdMetaVO;
 
 
 
 public class ReadXmlDomManager {
 
+	
+	public void createDataSet(String fileName) {
+		//
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		try {
+
+	          // optional, but recommended
+	          // process XML securely, avoid attacks like XML External Entities (XXE)
+	          dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+
+	          
+	          XPathFactory xpathFactory = XPathFactory.newInstance();
+	          XPath xpath = xpathFactory.newXPath();
+	          
+	          // parse XML file
+	          DocumentBuilder db = dbf.newDocumentBuilder();
+	          Document doc = db.parse(new File(fileName));
+	          
+	          doc.getDocumentElement().normalize();
+	          
+	          //
+	          OrdMetaVO meta = new OrdMetaVO();
+	          
+	          //
+	          meta.create(doc, xpath);
+	          
+	          
+	          //
+	          List<ItemVO> items = meta.listItemResult();
+	          int idx = 0;
+	          for(ItemVO item: items) {
+	        	  ++idx;
+	        	  System.out.println( "resultItem["+idx+"] checkName: " + item.getCheckName() + " mode:" + item.getMode() + " nameValue:" + item.getNameValue() + " price:" + item.getPrice() );
+	          }
+	          
+	          
+	          
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
+		
+	}
+	
 	
 	//
 	public void makeDataSet(String fname) {
